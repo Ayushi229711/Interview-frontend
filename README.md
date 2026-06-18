@@ -1,16 +1,134 @@
-# React + Vite
+# AI Interview Prep Platform - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React-based frontend for the AI Interview Prep Platform that helps users practice interviews, receive AI-generated feedback, and track their interview performance.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- User Registration & Login
+- JWT Authentication
+- Protected Routes
+- Start AI-Powered Interviews
+- Role-Based Interview Questions
+- Submit Answers
+- AI Performance Analysis
+- Interview History
+- Detailed Interview Reports
+- Responsive UI with Bootstrap
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
+- React.js
+- React Router DOM
+- Axios
+- Bootstrap
+- Vite
 
-## Expanding the ESLint configuration
+### Backend
+- Spring Boot
+- Spring Security
+- JWT Authentication
+- MySQL
+- Gemini AI API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+
+src/
+├── components/
+│ ├── Navbar.jsx
+│ ├── Footer.jsx
+│ └── ProtectedRoute.jsx
+│
+├── pages/
+│ ├── Login.jsx
+│ ├── Register.jsx
+│ ├── Dashboard.jsx
+│ ├── StartInterview.jsx
+│ ├── Interview.jsx
+│ ├── Result.jsx
+│ └── History.jsx
+│
+├── services/
+│ └── api.js
+│
+├── App.jsx
+└── main.jsx
+
+## Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/Ayushi229711/Interview-frontend.git
+cd Interview-frontend
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Start Development Server
+
+```bash
+npm run dev
+```
+
+Application will run on:
+
+```text
+http://localhost:5173
+```
+
+## Screens
+
+- Login Page
+- Register Page
+- Dashboard
+- Start Interview
+- Interview Session
+- Interview Result
+- Interview History
+
+## API Integration
+
+Frontend communicates with the Spring Boot backend using Axios.
+
+Example:
+
+```javascript
+API.post("/interview/start", {
+  role,
+  difficulty
+});
+```
+
+## Authentication
+
+JWT token is stored in localStorage.
+
+```javascript
+localStorage.setItem("token", token);
+```
+
+Protected routes are secured using:
+
+```javascript
+<ProtectedRoute>
+  <Dashboard />
+</ProtectedRoute>
+```
+
+## Future Enhancements
+
+- Dark Mode
+- Voice-Based Interviews
+- AI Mock Interview Assistant
+- Interview Analytics Dashboard
+- PDF Report Download
+- Leaderboard & Progress Tracking
+
+## Author
+
+Ayushi Sachan

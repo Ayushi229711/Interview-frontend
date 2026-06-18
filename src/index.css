@@ -1,0 +1,113 @@
+/* Global */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(
+    135deg,
+    #eef2ff,
+    #f8fafc
+  );
+  color: #1f2937;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+/* Cards */
+
+.card {
+  border-radius: 18px !important;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* Buttons */
+
+.btn {
+  border-radius: 10px !important;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #2563eb !important;
+}
+
+.btn-success {
+  background: #16a34a !important;
+}
+
+.btn-danger {
+  background: #dc2626 !important;
+}
+
+/* Inputs */
+
+.form-control,
+.form-select {
+  border-radius: 10px !important;
+  min-height: 48px;
+}
+
+textarea.form-control {
+  min-height: 180px;
+}
+
+/* Progress Bar */
+
+.progress {
+  height: 25px;
+  border-radius: 20px;
+}
+
+.progress-bar {
+  font-weight: bold;
+}
+
+/* Alerts */
+
+.alert {
+  border-radius: 12px;
+}
+
+/* Dashboard Cards */
+
+.dashboard-card {
+  cursor: pointer;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Result Score */
+
+.score-box {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+}
